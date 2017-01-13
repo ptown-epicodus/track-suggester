@@ -16,13 +16,13 @@ $(document).ready(function() {
       abstractionLevel = parseInt($("#low-high").val());
       license = $("input:radio[name=license]:checked").val();
 
-      calculateResult();
       event.preventDefault();
+
+      alert("You should take " + determineWinner());
   });
 });
 
-
-var calculateResult = function() {
+var calculateResults = function() {
   var ruby = 0;
   var php = 0;
   var java = 0;
@@ -112,5 +112,37 @@ var calculateResult = function() {
     ruby += 1;
     php += 1;
     css += 1;
+  }
+
+  return [ruby, php, java, css, cSharp];
+};
+
+var determineWinner = function() {
+  var contestants = ["Ruby/Rails", "PHP/Drupal", "Java/Android", "CSS/Design", "C#/.NET"];
+  var topScore = 0;
+  var indicesOfWinners = [ ];
+  var scores = calculateResults();
+
+  for (var i = 0; i < contestants.length; i++) {
+    var score = scores[i];
+    if (score === topScore) {
+      // Include another contestant tied for first
+      indicesOfWinners.push(i);
+    }
+    if (score > topScore) {
+      topScore = score;
+      // Reset winners list with only current contestant
+      indicesOfWinners = [i];
+    }
+  }
+
+  var numberOfTie = indicesOfWinners.length;
+  if (numberOfTie === 1) {
+    // Return sole winner
+    return contestants[indicesOfWinners[0]];
+  } else {
+    // Return winner at random
+    var winningIndex = Math.floor(Math.random() * numberOfTie);
+    return contestants[winningIndex];
   }
 };
