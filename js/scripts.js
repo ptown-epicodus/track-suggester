@@ -91,15 +91,16 @@ var calculateResult = function() {
 
   switch(abstractionLevel) {
     case 1:
-      css += 1;
-    case 2:
-      ruby += 1;
-    case 3:
-      php += 2;
-    case 4:
-      java += 1;
     case 5:
       cSharp += 1;
+    case 4:
+      java += 1;
+    case 3:
+      php += 1;
+    case 2:
+      ruby += 1;
+    case 1:
+      css += 1;
       break;
     default:
       break;
