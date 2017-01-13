@@ -17,99 +17,104 @@
       <li>C&#x266f;/.NET</li>
     </ul>
 
-    <div class="question">
-      Do you like programming?
-      <label>
-        <input type="radio" name="like-programming" value="true">
-        Yes
-      </label>
-      <label>
-        <input type="radio" name="like-programming" value="false">
-        No
-      </label>
-    </div>
+    <div id="quiz">
+      <form>
+        <div class="question">
+          Do you like programming?
+          <label>
+            <input type="radio" name="like-programming" value="true">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="like-programming" value="false">
+            No
+          </label>
+        </div>
 
-    <div class="question">
-      How do you feel about typing discipline?
-      <label>
-        <input type="radio" name="typing" value="strong">
-        I like the structure that strong typing encourages.
-      </label>
-      <label>
-        <input type="radio" name="typing" value="weak">
-        I like the freedom weak typing offers.
-      </label>
-    </div>
+        <div class="question">
+          How do you feel about typing discipline?
+          <label>
+            <input type="radio" name="typing" value="strong">
+            I like the structure that strong typing encourages.
+          </label>
+          <label>
+            <input type="radio" name="typing" value="weak">
+            I like the freedom weak typing offers.
+          </label>
+        </div>
 
-    <div class="question">
-      What is your favorite programming paradigm?
-      <label>
-        <input type="radio" name="paradigm" value="functional">
-        Functional
-      </label>
-      <label>
-        <input type="radio" name="paradigm" value="generic">
-        Generic
-      </label>
-      <label>
-        <input type="radio" name="paradigm" value="procedural">
-        Procedural
-      </label>
-      <label>
-        <input type="radio" name="paradigm" value="structured">
-        Structured
-      </label>
-      <label>
-        <input type="radio" name="paradigm" value="multi">
-        I like many.
-      </label>
-    </div>
+        <div class="question">
+          What is your favorite programming paradigm?
+          <label>
+            <input type="radio" name="paradigm" value="functional">
+            Functional
+          </label>
+          <label>
+            <input type="radio" name="paradigm" value="generic">
+            Generic
+          </label>
+          <label>
+            <input type="radio" name="paradigm" value="procedural">
+            Procedural
+          </label>
+          <label>
+            <input type="radio" name="paradigm" value="structured">
+            Structured
+          </label>
+          <label>
+            <input type="radio" name="paradigm" value="multi">
+            I like many.
+          </label>
+        </div>
 
-    <div class="question">
-      Do you like semicolons (at the end of your statements;)?
-      <label>
-        <input type="radio" name="semicolon" value="true">
-        Yes
-      </label>
-      <label>
-        <input type="radio" name="semicolon" value="false">
-        No
-      </label>
-    </div>
+        <div class="question">
+          Do you like semicolons (at the end of your statements;)?
+          <label>
+            <input type="radio" name="semicolon" value="true">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="semicolon" value="false">
+            No
+          </label>
+        </div>
 
-    <div class="question">
-      Scripting or compiled?
-      <label>
-        <input type="radio" name="compiled" value="true">
-        Compiled
-      </label>
-      <label>
-        <input type="radio" name="compiled" value="false">
-        Scripting
-      </label>
-    </div>
+        <div class="question">
+          Scripting or compiled?
+          <label>
+            <input type="radio" name="compiled" value="true">
+            Compiled
+          </label>
+          <label>
+            <input type="radio" name="compiled" value="false">
+            Scripting
+          </label>
+        </div>
 
-    <div class="question">
-      How low can you go?
-      <select id="low-high">
-        <option value="1">1: I like the comfort of high-level languages</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5: I like the control low-level langauges give me</option>
-      </select>
-    </div>
+        <div class="question">
+          How low can you go?
+          <select id="low-high">
+            <option value="1">1: I like the comfort of high-level languages</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5: I like the control low-level langauges give me</option>
+          </select>
+        </div>
 
-    <div class="question">
-      Do you work with closed- or open-source stacks?
-      <label>
-        <input type="radio" name="license" value="closed">
-        Closed
-      </label>
-      <label>
-        <input type="radio" name="license" value="open">
-        Open
-      </label>
+        <div class="question">
+          Do you work with closed- or open-source stacks?
+          <label>
+            <input type="radio" name="license" value="closed">
+            Closed
+          </label>
+          <label>
+            <input type="radio" name="license" value="open">
+            Open
+          </label>
+        </div>
+        <button type="submit">Submit quiz</button>
+      </form>
     </div>
   </body>
 </html>
