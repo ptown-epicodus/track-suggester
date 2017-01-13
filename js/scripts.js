@@ -90,7 +90,6 @@ var calculateResult = function() {
   }
 
   switch(abstractionLevel) {
-    case 1:
     case 5:
       cSharp += 1;
     case 4:
