@@ -1,0 +1,23 @@
+.code {
+  font-family: monospace;
+}
+
+#quiz {
+  border: 3px solid gray;
+  padding: 15px;
+}
+
+.question {
+  border: 1px dotted gray;
+  padding: 5px;
+}
+
+#results {
+  border: 3px solid green;
+  padding: 15px;
+  display: none;
+}
+
+#results h2 {
+  color: red;
+}

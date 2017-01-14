@@ -8,113 +8,151 @@
     <title>Track Suggester</title>
   </head>
   <body>
-    <h1>Find out which track is right for you:</h1>
-    <ul>
-      <li>Ruby/Rails</li>
-      <li>PHP/Drupal</li>
-      <li>Java/Android</li>
-      <li>CSS/Design</li>
-      <li>C&#x266f;/.NET</li>
-    </ul>
+    <div class="container">
+      <h1>Find out which track is right for you:</h1>
 
-    <div id="quiz">
-      <form>
-        <div class="question">
-          Do you like programming?
-          <label>
-            <input type="radio" name="like-programming" value="true">
-            Yes
-          </label>
-          <label>
-            <input type="radio" name="like-programming" value="false">
-            No
-          </label>
-        </div>
+      <ul>
+        <li>Ruby/Rails</li>
+        <li>PHP/Drupal</li>
+        <li>Java/Android</li>
+        <li>CSS/Design</li>
+        <li>C&#x266f;/.NET</li>
+      </ul>
 
-        <div class="question">
-          How do you feel about typing discipline?
-          <label>
-            <input type="radio" name="typing" value="strong">
-            I like the structure that strong typing encourages.
-          </label>
-          <label>
-            <input type="radio" name="typing" value="weak">
-            I like the freedom weak typing offers.
-          </label>
-        </div>
+      <div id="quiz">
+        <form>
+          <ol>
+            <li>
+              <div class="question form-group">
+                Do you like programming?
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="like-programming" value="true">
+                    Yes
+                  </label>
+                  <label>
+                    <input type="radio" name="like-programming" value="false">
+                    No
+                  </label>
+                </div>
+              </div>
+            </li>
 
-        <div class="question">
-          What is your favorite programming paradigm?
-          <label>
-            <input type="radio" name="paradigm" value="functional">
-            Functional
-          </label>
-          <label>
-            <input type="radio" name="paradigm" value="generic">
-            Generic
-          </label>
-          <label>
-            <input type="radio" name="paradigm" value="procedural">
-            Procedural
-          </label>
-          <label>
-            <input type="radio" name="paradigm" value="structured">
-            Structured
-          </label>
-          <label>
-            <input type="radio" name="paradigm" value="multi">
-            I like many.
-          </label>
-        </div>
+            <li>
+              <div class="question form-group">
+                How do you feel about typing discipline?
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="typing" value="strong">
+                    I like the structure that strong typing encourages.
+                  </label>
+                  <label>
+                    <input type="radio" name="typing" value="weak">
+                    I like the freedom weak typing offers.
+                  </label>
+                </div>
+              </div>
+            </li>
 
-        <div class="question">
-          Do you like semicolons (at the end of your statements;)?
-          <label>
-            <input type="radio" name="semicolon" value="true">
-            Yes
-          </label>
-          <label>
-            <input type="radio" name="semicolon" value="false">
-            No
-          </label>
-        </div>
+            <li>
+              <div class="question form-group">
+                What is your favorite programming paradigm?
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="paradigm" value="functional">
+                    Functional
+                  </label>
+                  <label>
+                    <input type="radio" name="paradigm" value="generic">
+                    Generic
+                  </label>
+                  <label>
+                    <input type="radio" name="paradigm" value="procedural">
+                    Procedural
+                  </label>
+                  <label>
+                    <input type="radio" name="paradigm" value="structured">
+                    Structured
+                  </label>
+                  <label>
+                    <input type="radio" name="paradigm" value="multi">
+                    I like many.
+                  </label>
+                </div>
+              </div>
+            </li>
 
-        <div class="question">
-          Scripting or compiled?
-          <label>
-            <input type="radio" name="compiled" value="true">
-            Compiled
-          </label>
-          <label>
-            <input type="radio" name="compiled" value="false">
-            Scripting
-          </label>
-        </div>
+            <li>
+              <div class="question form-group">
+                Do you like semicolons (at the end of your <span class="code">statements;</span>)?
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="semicolon" value="true">
+                    Yes
+                  </label>
+                  <label>
+                    <input type="radio" name="semicolon" value="false">
+                    No
+                  </label>
+                </div>
+              </div>
+            </li>
 
-        <div class="question">
-          How low can you go?
-          <select id="low-high">
-            <option value="1">1: I like the comfort of high-level languages</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5: I like the control low-level langauges give me</option>
-          </select>
-        </div>
+            <li>
+              <div class="question form-group">
+                Scripting or compiled?
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="compiled" value="true">
+                    Compiled
+                  </label>
+                  <label>
+                    <input type="radio" name="compiled" value="false">
+                    Scripting
+                  </label>
+                </div>
+              </div>
+            </li>
 
-        <div class="question">
-          Do you work with closed- or open-source stacks?
-          <label>
-            <input type="radio" name="license" value="closed">
-            Closed
-          </label>
-          <label>
-            <input type="radio" name="license" value="open">
-            Open
-          </label>
-        </div>
-        <button type="submit">Submit quiz</button>
-      </form>
+            <li>
+              <div class="question form-group">
+                How low can you go?
+                <select id="low-high" class="form-control">
+                  <option value="1">1: I like the comfort of high-level languages</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5: I like the control low-level langauges give me</option>
+                </select>
+              </div>
+            </li>
+
+            <li>
+              <div class="question form-group">
+                Do you work with closed- or open-source stacks?
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="license" value="closed">
+                    Closed
+                  </label>
+                  <label>
+                    <input type="radio" name="license" value="open">
+                    Open
+                  </label>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <button type="submit" class="btn">Submit quiz</button>
+        </form>
+      </div>
+
+      <div id="results">
+        <h2>Result:</h2>
+        <p>You should take </p>
+        <button id="retake" class="btn">Retake quiz</button>
+      </div>
     </div>
   </body>
 </html>

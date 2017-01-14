@@ -18,7 +18,15 @@ $(document).ready(function() {
 
       event.preventDefault();
 
-      alert("You should take " + determineWinner());
+      $("#results p").append(determineWinner());
+      $("#quiz").hide();
+      $("#results").show();
+  });
+
+  $("button#retake").click(function() {
+    $("#results").hide();
+    $("#results p").text("You should take ");
+    $("#quiz").show();
   });
 });
 
